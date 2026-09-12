@@ -118,20 +118,15 @@ h1 {
 .hero-exhibit { margin: 0; width: 100%; transform: translateY(1vh); }
 .art-frame { width: min(100%, 760px); margin-left: auto; overflow: hidden; }
 .art-frame img { width: 100%; height: auto; object-fit: cover; }
-.hero-exhibit figcaption {
-  width: min(100%, 760px); margin: 17px 0 0 auto;
-  display: flex; justify-content: space-between; gap: 20px;
-  font-family: var(--mono); font-size: 8px; letter-spacing: .18em; color: var(--muted);
+.sound-line-gif {
+  position: fixed;
+  left: 0;
+  bottom: 23px;
+  width: min(340px, 34vw);
+  height: auto;
+  opacity: .62;
+  pointer-events: none;
 }
-.sound-line {
-  position: fixed; left: 0; bottom: 27px; display: flex; align-items: center; gap: 4px; opacity: .65;
-}
-.sound-line span { width: 7px; height: 1px; background: var(--ink); display: block; }
-.sound-line span:nth-child(2){ width: 15px; transform: rotate(7deg); }
-.sound-line span:nth-child(3){ width: 28px; transform: rotate(-9deg); }
-.sound-line span:nth-child(4){ width: 12px; transform: rotate(4deg); }
-.sound-line span:nth-child(5){ width: 20px; transform: rotate(-3deg); }
-.sound-line span:nth-child(6){ width: 65px; }
 .scroll-mark {
   position: fixed; right: 4.7vw; bottom: 35px; display: flex; flex-direction: column; align-items: center; gap: 11px;
   font-family: var(--mono); font-size: 8px; letter-spacing: .18em; color: var(--muted);
@@ -178,9 +173,8 @@ h1 {
   .intro { font-size: 14px; line-height: 2.05; }
   .works-link { margin-top: 58px; }
   .hero-exhibit { transform: none; }
-  .art-frame, .hero-exhibit figcaption { width: 100%; }
-  .hero-exhibit figcaption { font-size: 7px; }
-  .sound-line, .scroll-mark { display: none; }
+  .art-frame { width: 100%; }
+  .sound-line-gif, .scroll-mark { display: none; }
   .about-page, .contact-page { width: calc(100% - 48px); padding: 9vh 0 80px; }
   .about-grid { display: flex; flex-direction: column; gap: 64px; }
   .about-copy .lead { margin-bottom: 55px; }
@@ -196,7 +190,6 @@ h1 {
   nav { gap: 15px; }
   nav a { font-size: 9px; }
   .home { width: calc(100% - 32px); padding-top: 10vh; }
-  .eyebrow { margin-bottom: 26px; }
   .hairline { margin: 30px 0 28px; }
   .intro { font-size: 13px; }
   .works-link, .note-link { width: 100%; }
