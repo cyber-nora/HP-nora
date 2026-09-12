@@ -159,11 +159,13 @@ h1 {
   nav { gap: 22px; padding-top: 6px; }
   nav a { font-size: 10px; letter-spacing: .11em; }
   .home { width: calc(100% - 48px); display: flex; flex-direction: column; align-items: stretch; gap: 62px; padding: 12vh 0 100px; }
-  .hero-copy { padding: 0 5px; }
+  .hero-copy { display: contents; }
   .hero-copy h1 { font-size: clamp(39px, 10vw, 56px); }
   .intro { font-size: 14px; line-height: 2.05; }
   .works-link { margin-top: 58px; }
-  .hero-exhibit { transform: none; }
+  .hero-exhibit { transform: none; order: 4; }
+  .works-link { order: 5; }
+  .note-link { order: 6; }
   .art-frame { width: 100%; }
   .scroll-mark { display: none; }
   .about-page, .contact-page { width: calc(100% - 48px); padding: 9vh 0 80px; }
