@@ -194,3 +194,44 @@ h1 {
   .mail-box { grid-template-columns: 60px 1fr 18px; }
   .mail-box strong { font-size: 11px; }
 }
+
+/* MEMBERS */
+.members {
+  margin-top: 100px;
+}
+
+.members-title {
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  margin-bottom: 34px;
+}
+
+.member-list {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.member {
+  display: grid;
+  grid-template-columns: 42px 1fr;
+  align-items: start;
+}
+
+.member-number {
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  opacity: 0.55;
+}
+
+.member-name {
+  font-size: 16px;
+  letter-spacing: 0.04em;
+}
+
+.member-role {
+  margin-top: 6px;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  opacity: 0.55;
+}
