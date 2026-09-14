@@ -197,7 +197,9 @@ h1 {
 
 /* MEMBERS */
 .members {
-  margin-top: 100px;
+  margin-top: 90px;
+  padding-top: 35px;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
 }
 
 .members-title {
