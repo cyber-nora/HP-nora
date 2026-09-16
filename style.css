@@ -191,7 +191,7 @@ h1 {
   nav { gap: 15px; }
   nav a { font-size: 9px; }
   .home { width: calc(100% - 32px); padding-top: 10vh; }
-  .hairline { margin: 30px 0 28px; }
+  .hairline { margin: 20px 0 24px; }
   .intro { font-size: 13px; }
   .works-link, .note-link { width: 100%; }
   .about-page, .contact-page { width: calc(100% - 32px); }
