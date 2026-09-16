@@ -54,7 +54,12 @@ nav a.active { text-decoration: underline; text-underline-offset: 5px; }
   gap: clamp(50px, 7vw, 125px);
   padding: 4vh 4vw 9vh 3.8vw;
 }
-.hero-copy { padding-top: 0; display: contents; }
+.hero-copy {
+  grid-column: 1;
+  grid-row: 1;
+  padding-top: 0;
+  display: block;
+}
 .hero-copy h1, .hero-copy .hairline, .hero-copy .intro { grid-column: 1; }
 .hero-copy h1 { grid-row: 1; }
 .hero-copy .hairline { grid-row: 2; }
