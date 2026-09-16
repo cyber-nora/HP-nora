@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="nora NEWS — 音は、時代を旅する。">
+  <title>News — nora</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header inner-header">
+    <a class="brand" href="index.html" aria-label="nora home">
+      <img src="images/nora-logo.png" alt="nora">
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="about.html">About</a>
+      <a class="active" href="news.html">News</a>
+      <a href="https://note.com/nora_works" target="_blank" rel="noopener">Works</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="news-page">
+    <div class="page-kicker">NEWS</div>
+    <div id="all-news-list" class="all-news-list" aria-live="polite"></div>
+  </main>
+
+  <script>
+    fetch("data/news.json")
+      .then(response => {
+        if (!response.ok) throw new Error("NEWS data could not be loaded.");
+        return response.json();
+      })
+      .then(items => {
+        const list = document.getElementById("all-news-list");
+        items.forEach(item => {
+          const link = document.createElement("a");
+          link.className = "all-news-item";
+          link.href = item.url;
+          link.target = "_blank";
+          link.rel = "noopener";
+          link.innerHTML = `
+            <time datetime="${item.date.replaceAll('.', '-')}">${item.date}</time>
+            <span class="all-news-title">${item.title}</span>
+            <span class="news-arrow">→</span>
+          `;
+          list.appendChild(link);
+        });
+      })
+      .catch(error => console.error(error));
+  </script>
+</body>
+</html>
