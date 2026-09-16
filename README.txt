@@ -12,3 +12,13 @@ NORA GitHub Pages site
 Worksは https://note.com/nora_works に直接リンクしています。
 
 ※ CONTACTの info@nora.jp は仮のアドレスです。公開前に実際のメールアドレスへ変更してください。
+
+News更新方法
+news.json
+
+
+{
+  "date": "2026.09.20",
+  "title": "新しい作品を公開しました",
+  "url": "https://..."
+}
