@@ -14,6 +14,7 @@
     </a>
     <nav aria-label="Main navigation">
       <a href="about.html">About</a>
+      <a href="news.html">News</a>
       <a href="https://note.com/nora_works" target="_blank" rel="noopener">Works</a>
       <a href="contact.html">Contact</a>
     </nav>
@@ -34,6 +35,14 @@
         <span><strong>nora works</strong><small>SOUND / IDEA / SOMETHING</small></span>
         <span class="arrow">→</span>
       </a>
+
+      <section class="news-preview" aria-labelledby="news-title">
+        <div class="news-heading">
+          <span id="news-title">NEWS</span>
+          <a href="news.html">ALL NEWS →</a>
+        </div>
+        <div id="news-list" class="news-list" aria-live="polite"></div>
+      </section>
     </section>
 
     <figure class="hero-exhibit">
@@ -45,5 +54,31 @@
   </main>
 
     <div class="scroll-mark" aria-hidden="true"><span>SCROLL</span><i></i></div>
+
+  <script>
+    fetch("data/news.json")
+      .then(response => {
+        if (!response.ok) throw new Error("NEWS data could not be loaded.");
+        return response.json();
+      })
+      .then(items => {
+        const list = document.getElementById("news-list");
+        items.slice(0, 3).forEach(item => {
+          const link = document.createElement("a");
+          link.className = "news-item";
+          link.href = item.url;
+          link.target = "_blank";
+          link.rel = "noopener";
+          link.innerHTML = `
+            <time datetime="${item.date.replaceAll('.', '-')}">${item.date}</time>
+            <span class="news-title">${item.title}</span>
+            <span class="news-arrow">→</span>
+          `;
+          list.appendChild(link);
+        });
+      })
+      .catch(error => console.error(error));
+  </script>
+
 </body>
 </html>
