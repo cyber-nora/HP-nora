@@ -186,7 +186,7 @@ h1 {
   .hero-copy .hairline, .hero-copy .intro, .hero-copy .news-preview { grid-column: auto; grid-row: auto; }
   .intro { font-size: 14px; line-height: 2.05; }
   .hero-exhibit { grid-column: auto; grid-row: auto; transform: none; order: 4; }
-  .hero-copy .news-preview { order: 5; }
+  .news-preview { order: 5; }
   .works-block { grid-column: auto; grid-row: auto; order: 6; margin-top: 0; }
   .works-link { margin-top: 0; }
   .art-frame { width: 100%; }
