@@ -73,7 +73,7 @@ nav a.active { text-decoration: underline; text-underline-offset: 5px; }
 .hero-copy .hairline {
   margin: 22px 0 24px;
 }
-.hero-copy .news-preview { grid-column: 2; grid-row: 2; align-self: start; }
+.news-preview { grid-column: 2; grid-row: 2; align-self: start; }
 .hero-exhibit { grid-column: 2; grid-row: 1; }
 .works-block { grid-column: 2; grid-row: 3; align-self: start; margin-top: -30px;
 }
