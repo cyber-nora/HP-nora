@@ -51,8 +51,7 @@ nav a.active { text-decoration: underline; text-underline-offset: 5px; }
   display: grid;
   grid-template-columns: minmax(380px, .82fr) minmax(520px, 1.18fr);
   align-items: center;
-  column-gap: clamp(50px, 7vw, 125px);
-  gap: 10px;
+  gap: clamp(50px, 7vw, 125px);
   padding: 4vh 4vw 9vh 3.8vw;
 }
 .hero-copy {
