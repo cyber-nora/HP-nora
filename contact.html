@@ -6,30 +6,70 @@
   <meta name="description" content="noraへのお問い合わせ。">
   <title>Contact — nora</title>
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    .contact-form-embed {
+      width: 100%;
+      margin-top: 40px;
+    }
+
+    .contact-form-embed iframe {
+      display: block;
+      width: 100%;
+      max-width: 720px;
+      height: 850px;
+      border: 0;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 600px) {
+      .contact-form-embed {
+        margin-top: 28px;
+      }
+
+      .contact-form-embed iframe {
+        height: 900px;
+      }
+    }
+  </style>
 </head>
+
 <body>
   <header class="site-header inner-header">
-    <a class="brand" href="index.html" aria-label="NORA home"><img src="images/nora-logo.png" alt="nora"></a>
+    <a class="brand" href="index.html" aria-label="NORA home">
+      <img src="images/nora-logo.png" alt="nora">
+    </a>
+
     <nav aria-label="Main navigation">
       <a href="about.html">About</a>
-      <a href="https://note.com/nora_works" target="_blank" rel="noopener">Works</a>
+      <a href="https://note.com/nora_works"
+         target="_blank" rel="noopener">Works</a>
       <a class="active" href="contact.html">Contact</a>
     </nav>
   </header>
 
   <main class="contact-page">
     <div class="page-kicker">CONTACT</div>
+
     <div class="contact-layout">
       <div>
         <h1>お問い合わせ</h1>
-        <p class="contact-lead">企画やフィールドレコーディング、<br>制作についてのお問い合わせはこちらから。</p>
+        <p class="contact-lead">
+          企画やフィールドレコーディング、<br>
+          制作についてのお問い合わせはこちらから。
+        </p>
       </div>
-      <a class="mail-box" href="mailto:nora.soundscape39@gmail.com">
-        <span>EMAIL</span>
-        <strong>nora.soundscape39@gmail.com</strong>
-        <i>↗</i>
-      </a>
+    </div>
+
+    <div class="contact-form-embed">
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLSfIYfwFlpmvN_ov0ztviWDfgsNfBMU7Hc5CKfUCGd6mlvZ6-Q/viewform?embedded=true"
+        title="nora お問い合わせフォーム"
+        loading="lazy">
+        読み込んでいます…
+      </iframe>
     </div>
   </main>
 </body>
 </html>
+
