@@ -8,6 +8,20 @@
   <link rel="stylesheet" href="style.css">
 
   <style>
+    /* Contact page */
+
+    .contact-hero-image {
+      width: 100%;
+      max-width: 1100px;
+      margin: 0 auto 44px;
+    }
+
+    .contact-hero-image img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
     .contact-form-embed {
       width: 100%;
       margin-top: 16px;
@@ -23,6 +37,10 @@
     }
 
     @media (max-width: 600px) {
+      .contact-hero-image {
+        margin-bottom: 28px;
+      }
+
       .contact-form-embed {
         margin-top: 20px;
       }
@@ -49,26 +67,37 @@
   </header>
 
   <main class="contact-page">
+
+    <!-- 手紙のスケッチ -->
+    <figure class="contact-hero-image">
+      <img
+        src="images/contact-letter.jpg"
+        alt="手紙を差し出す手を描いた手描きのスケッチ">
+    </figure>
+
+    <!-- ページ見出し -->
     <div class="page-kicker">CONTACT</div>
 
     <div class="contact-layout">
       <div>
         <h1>お問い合わせ</h1>
         <p class="contact-lead">
-          企画や音の記録、作品制作についての<br>お問い合わせはこちらから。
+          企画や音の記録、作品制作についての<br>
+          お問い合わせはこちらから。
         </p>
       </div>
     </div>
 
+    <!-- Tallyお問い合わせフォーム -->
     <div class="contact-form-embed">
-  <iframe
-    src="https://tally.so/embed/rjNYdR?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
-    title="nora お問い合わせフォーム"
-    loading="lazy">
-    読み込んでいます…
-  </iframe>
-</div>
+      <iframe
+        src="https://tally.so/embed/rjNYdR?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+        title="nora お問い合わせフォーム"
+        loading="lazy">
+        読み込んでいます…
+      </iframe>
+    </div>
+
   </main>
 </body>
 </html>
-
